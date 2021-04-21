@@ -75,7 +75,7 @@ class Fish(NN):
         nn_input[0,3] = self.y - nn_input[0,3]
         # Based on NN output, jump or not
         # can only jump when fish is falling
-        if self.model.predict(nn_input)[0,0] > 0.5 and self.velocity >= 0.0:
+        if self.model(nn_input)[0,0] > 0.5 and self.velocity >= 0.0:
             self.acceleration += config.JUMP_FORCE
         else:
             self.acceleration += self.gravity_force
