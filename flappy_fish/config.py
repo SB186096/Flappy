@@ -1,6 +1,6 @@
 """config.py
 
-Contains all global variables for flappy_bird
+Contains all global variables for flappy_fish
 """
 
 # Sizes

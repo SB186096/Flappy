@@ -25,7 +25,7 @@ class NN():
         #
         # =====================================================================
 
-        self.model.add(Dense(1, input_dim=16, activation="softplus"))
+        self.model.add(Dense(1, input_dim=8, activation="softplus"))
         self.model.compile(loss="categorical_crossentropy",
                            optimizer=Adam(),
                            metrics=["accuracy"])
